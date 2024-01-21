@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Weather App</h1><br>
+
+    <div class="inputs">
+      <label for="lat">Latitude:</label>
+      <input placeholder="+North/-South" id="lat" />
+
+      <label for="long">Longitude:</label>
+      <input placeholder="+East / -West" id="lon" />
+
+      <button onclick="getWeather()">Get Weather</button>
+    </div><br>
+
+    <div id="weather-data-container"></div>
+    <div id="error-message"></div> 
+  </div>
+  <script src="script.js"></script> 
+</body>
+</html>
