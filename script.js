@@ -26,7 +26,7 @@ async function getReverseGeocodingData(lat, lon) {
 }
 
 async function getWeather() {
-  const apiKey = OPENWEATHERMAP_API; 
+  const apiKey = '825a55eb94d489abd7b6d71e57509046'; 
   const location = await getLocation();
   const apiCall = `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=${apiKey}&units=metric`;
 
